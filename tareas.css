@@ -1,0 +1,43 @@
+#conte{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkcyan;
+    flex-direction: row;
+}
+
+#butsec{
+    width: 100%;
+    height: 120px;
+    border: 10px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#ana{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+}
+
+#eliminar{
+    width: 200px;
+    height: 100px;
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tarea{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: lightblue; 
+    border: 10px,solid,gray;
+}
