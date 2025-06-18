@@ -5,6 +5,7 @@ let eda = document.getElementById("edad");
 
 let generos = ["masc", "fem", "otro"];
 let intereses = ["arte", "musica", "deportes", "tecnologia"];
+let paises = ["mex", "esp", "col", "arg", "ven", "per", "chi", "otro"];
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -12,6 +13,7 @@ form.addEventListener("submit", function(event){
 
     let generous = document.querySelector("input[name='gen']:checked");
     let interesesus = document.querySelector("input[name='pref']:checked");
+    let paisus = document.getElementById("pais");
 
     if(nameus.value == ""){
         console.log("el nombre no puede estar vacio");
@@ -35,8 +37,14 @@ form.addEventListener("submit", function(event){
     if(intereses.indexOf(interesesus.value) == -1){
         console.log("Este interes es invalido");
     }
+
+    if(intereses.indexOf(interesesus.value) == -1){
+        console.log("Este interes es invalido");
+    }
     
-    
+    if(paises.indexOf(paisus.value) == -1){
+        console.log("Este pais es invalido");
+    }
 })
 
 
