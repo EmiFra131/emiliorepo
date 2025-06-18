@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Formulario de registro </h1>
+    <form id="mainform">
+
+        <Label for="Nombreuser"> Ingresa tu nombre completo </Label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <br><br>
+
+        <label for="edaduser"> Ingresa tu edad </label>
+        <input type="number" min="1" name="edad" id="edad" required>
+
+        <br><br>
+
+        <label for="cp"> Ingresa tu codigo Postal </label>
+        <input type="number" min="1" name="cp" id="cp" required>
+
+        <br><br>
+        
+        <label for="generouser"> selecciona tu genero </label>
+
+        <br>
+
+        <input type="radio" name="gen" id="masc" value="masc">
+        <label for="mas"> Masculino </label>
+
+        <input type="radio" name="gen" id="fem" value="fem">
+        <label for="fem"> Femenino </label>
+
+        <input type="radio" name="gen" id="otro" value="otro" checked>
+        <label for="otro"> otro </label>
+
+        <br><br>
+
+        <label for="selector"> Escoje las opciones que te sean de mayor interes</label>
+
+        <br>
+
+        <input type="checkbox" name="pref" id="tecnologia" value="tecnologia">
+        <label for="tec">Tecnologia</label>
+
+        <input type="checkbox" name="pref" id="deportes" value="deportes">
+        <label for="dep">Deportes</label>
+
+        <input type="checkbox" name="pref" id="musica" value="musica">
+        <label for="mus">Musica</label>
+
+        <input type="checkbox" name="pref" id="arte" value="arte">
+        <label for="art">Arte</label>
+
+        <br><br>
+
+        <label for="pais">Selecciona tu pais</label>
+
+        <select name="pais" id="pais">
+            <option value="mex">Mexico</option>
+            <option value="esp">Espana</option>
+            <option value="col">Colombia</option>
+            <option value="arg">Argentina</option>
+            <option value="per">Peru</option>
+            <option value="chi"></option>
+        </select> 
+
+       <br><br>
+
+        <label for="coments"> Coloca tus comentarios aqui</label>
+        <input type="text" name="coments" id="coments">
+
+        <br><br>
+
+        <label for="img"> Agrega tu imagen </label>
+        <input type="file" accept="image/*">
+
+        <br><br>
+
+        <input type="submit">
+
+        <script  src="form.js"></script>
+
+    </form>
+</body>
+</html>
