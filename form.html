@@ -9,22 +9,27 @@
     <h1> Formulario de registro </h1>
     <form id="mainform">
 
-        <Label for="Nombreuser"> Ingresa tu nombre completo </Label>
+        <Label for="Nombreuser" class="pregunta"> Ingresa tu nombre completo </Label>
         <input type="text" name="nombre" id="nombre" required>
 
+        <br><label class="error" id="err1"></label>
         <br><br>
 
-        <label for="edaduser"> Ingresa tu edad </label>
+        <label for="edaduser" class="pregunta"> Ingresa tu edad </label>
         <input type="number" min="1" name="edad" id="edad" required>
 
+        <br><label class="error" id="err2"></label>
+
         <br><br>
 
-        <label for="cp"> Ingresa tu codigo Postal </label>
+        <label for="cp" class="pregunta"> Ingresa tu codigo Postal </label>
         <input type="number" min="1" name="cp" id="cp" required>
+
+        <br><label class="error" id="err3"></label>
 
         <br><br>
         
-        <label for="generouser"> selecciona tu genero </label>
+        <label for="generouser" class="pregunta"> selecciona tu genero </label>
 
         <br>
 
@@ -37,9 +42,11 @@
         <input type="radio" name="gen" id="otro" value="otro" checked>
         <label for="otro"> otro </label>
 
+        <br><label class="error" id="err4"></label>
+
         <br><br>
 
-        <label for="selector"> Escoje las opciones que te sean de mayor interes</label>
+        <label for="selector" class="pregunta"> Escoje las opciones que te sean de mayor interes</label>
 
         <br>
 
@@ -55,9 +62,11 @@
         <input type="checkbox" name="pref" id="arte" value="arte">
         <label for="art">Arte</label>
 
+        <br><label class="error" id="err5"></label>
+
         <br><br>
 
-        <label for="pais">Selecciona tu pais</label>
+        <label for="pais" class="pregunta" >Selecciona tu pais</label>
 
         <select name="pais" id="pais">
             <option value="mex">Mexico</option>
@@ -70,21 +79,34 @@
             <option value="otros">Otro</option>
         </select> 
 
+        <br><label class="error" id="err6"></label>
+
        <br><br>
 
-        <label for="coments"> Coloca tus comentarios aqui</label>
+        <label for="coments" class="pregunta"> Coloca tus comentarios aqui</label>
         <input type="text" name="coments" id="coments">
 
         <br><br>
 
-        <label for="img"> Agrega tu imagen </label>
+        <label for="img" class="pregunta"> Agrega tu imagen </label>
         <input type="file" accept="image/*">
 
         <br><br>
 
+        <section id="content">
+            <label> Responde la siguiente pregunta </label>
+            <br><br>
+            <label for="captcha" id="text"></label>
+            <br><br>
+            <input type="number" required name="captcha" id="captcha">
+        </section>
+
         <input type="submit">
 
         <script  src="form.js"></script>
+        <link rel="stylesheet" href="form.css">
+
+
 
     </form>
 </body>

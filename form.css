@@ -1,0 +1,15 @@
+#mainform{
+    width: 500px;
+    height: 1000px;
+    background-color: darkgray;
+}
+
+.pregunta{
+    background-color: #808080;
+    font-size: 30px;
+}
+.error{
+    color: red;
+    stroke: black;
+    stroke-width: 5px;
+}
